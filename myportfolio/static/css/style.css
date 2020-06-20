@@ -1,0 +1,104 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+html {
+  scroll-padding-top: 60px; /* height of sticky header */
+}
+
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+.myimage{
+  height: 300px;
+  border-radius: 50% !important;
+  margin: 15px;
+}
+
+.aboutmeh3{
+  margin: 0px !important;
+  letter-spacing: 1px;
+}
+
+.titulos{
+  margin: 0px !important;
+  letter-spacing: 1px;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.carousel .carousel-item {
+  width:400px !important;
+}
+
+.myhighlight{
+  border-radius: 5px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.mytitle{
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.mysubtitle{
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.mysubtitle2{
+  letter-spacing: 1px;
+}
+
+.mycontact{
+  margin-bottom: 0px;
+  font-size: 19px;
+  text-decoration: underline;
+}
+
+.aboutme{
+  font-size: 19px;
+  text-align:justify !important;
+  text-justify: inter-word !important;
+  /* for IE9 */
+  -ms-text-align-last:center !important;
+}
+
+.icono{
+  color: teal !important;
+}
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 600px) {
+  .myimage{
+  height: 100px;
+  }
+
+  .aboutmeh3{
+    font-size: 30px;
+  }
+
+  .aboutme{
+    text-align: justify !important;
+    text-justify: auto !important;
+  } 
+}
+
+footer.page-footer {
+  margin: 0;
+}

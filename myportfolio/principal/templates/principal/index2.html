@@ -1,0 +1,370 @@
+{%load static%}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Julio Mendez</title>
+  <link rel="icon" href="{% static '/images/logo.png' %}" type="image/icon type">
+  <!-- Google icons  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+       
+  <link href="{% static '/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <!-- Barra de navegacion  -->
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a id="logo-container" href="#inicio" class="brand-logo">
+            <img width="55" src="{% static '/images/logo.png' %}">
+          </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#expertos">Habilidades</a></li>
+            <li><a href="#trabajos">Trabajos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <ul id="mobile-demo" class="sidenav sidenav-close" style="width:200px">
+    <br>
+    <li>
+      <a href="#servicios">
+        <i class="material-icons icono">work</i>Servicios
+      </a>
+    </li>
+    <li>
+      <a href="#expertos">
+        <i class="material-icons icono">layers</i>Habilidades
+      </a>
+    </li>
+    <li>
+      <a href="#trabajos">
+        <i class="material-icons icono">perm_media</i>Proyectos
+      </a>
+    </li>
+    <li>
+      <a href="#contacto">
+        <i class="material-icons icono">phone</i>Contacto
+      </a>
+    </li>
+  </ul>
+  <!-- parallax  -->
+  <div class="parallax-container" id="inicio">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2"></h1>
+        <div class="row center">
+          <h1 class="header center teal-text text-lighten-2"></h1>
+          <h1 class="header center teal-text text-lighten-2"></h1>
+        </div>
+        <div class="row center">
+          <h1 class="header center teal-text text-lighten-2"></h1>
+          <h1 class="header center teal-text text-lighten-2"></h1>
+        </div>
+        <div class="row center">
+          <p class="header col s12 light black-text">HOLA, YO SOY</p>
+          <h1 class="black-text">JULIO MENDEZ</h1>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static '/images/background.jpg' %}" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <!-- perfil  -->
+  <br>
+  <div class="container section">
+    <div class="row">
+      <div class="col s12">
+        <div class="card horizontal">
+          <div class="card-image hide-on-small-only">
+            <img class="myimage" src="{% static '/images/foto.jpg' %}">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <h3 class="aboutmeh3 grey-text light">Acerca de mi</h3><br>
+              <p class="aboutme">Soy ingeniero electrónico y desarrollador de paginas web. Me gustan los retos de programacion y tambien enseñar programacion en mi canal de YouTube.</p>
+              <br>
+              <a href="https://www.youtube.com/channel/UCnRF7MjaHkb4X5blAiEKEqA" target="_blank"><img width="30" src="{% static '/images/icons/youtube.png' %}"></a>
+              <a href="https://www.behance.net/juliomendez4" target="_blank"><img width="30" src="{% static '/images/icons/behance.png' %}"></a>
+              <a href="https://twitter.com/JulioMe16632600" target="_blank"><img width="30" src="{% static '/images/icons/twitter.png' %}"></a>
+              <a href="https://www.facebook.com/juliomendez4" target="_blank"><img width="30" src="{% static '/images/icons/facebook.png' %}"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- servicios  -->
+  <section id="servicios">
+    <div class="block grey lighten-4">
+      <div class="container section">
+          <br>
+          <p class="center titulos light">LO QUE HAGO</p>
+          <h3 class="center titulos">MIS SERVICIOS</h3>
+          <br><br>
+          <div class="row">
+            <div class="col s12 m6 l4">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="{% static 'images/extra/graphic.jpg' %}">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Diseño Gráfico<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Diseño Grafico<i class="material-icons right">close</i></span>
+                  <p>Un diseño bien ejecutado que transmita los valores de la marca, hará que las ventas suban.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="{% static 'images/extra/web.jpg' %}">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Desarrollo web<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Desarrollo web<i class="material-icons right">close</i></span>
+                  <p>Sitio web moderno y listo para dispositivos móviles que ayudará a su comercialización.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="{% static 'images/extra/traductor.jpg' %}">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Traducciones<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Traducciones<i class="material-icons right">close</i></span>
+                  <p>Importante para personas que buscan ampliar su comercio de manera internacional</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="{% static 'images/extra/IA2.jpg' %}">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">I.A.<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">I.A.<i class="material-icons right">close</i></span>
+                  <p>La Inteligencia Artificial encuentra la estructura y tendencia en los datos, optimizando bases de datos o incluso el importante SEO.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="{% static 'images/extra/juego.jfif' %}">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Desarrollo Juegos<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Desarrollo Juegos<i class="material-icons right">close</i></span>
+                  <p>Creacion de un videojuego desde el concepto inicial hasta su version final, con fines didácticos o comerciales.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="{% static 'images/extra/consulta.jpg' %}">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Consulta<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Consulta<i class="material-icons right">close</i></span>
+                  <p>Realiza consultas de ingenieria o de desarrollo web para realizar tu proyecto.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Expertos  -->
+  <div class="container section" id="expertos">
+      <br>
+      <p class="center titulos light">MI RESUMEN</p>
+      <h3 class="center titulos">MIS HABILIDADES</h3>
+      <br><br>
+      <div class="row">
+        <div class="col s12 m6 l6">
+            <p class="mytitle">Mi experiencia</p>
+          <div class="card-panel hoverable">
+              <span class="mysubtitle">Desarrollador de frontend</span><br>
+              <span class="teal white-text myhighlight">&nbsp;2019-Present | freelancer&nbsp;</span>
+              <p>Diferentes paginas web usando la libreria de ReactJs</p>
+          </div>
+          <div class="card-panel hoverable">
+              <span class="mysubtitle">Desarrollador de backend</span><br>
+              <span class="teal white-text myhighlight">&nbsp;2019-Present | freelancer&nbsp;</span>
+              <p>Diferentes paginas web usando Django</p>
+          </div>
+        </div>
+        <div class="col s12 m6 l6">
+            <p class="mytitle">Mi educación</p>
+          <div class="card-panel hoverable">
+              <span class="mysubtitle">Ingeniero Electrónico</span><br>
+              <span class="teal white-text myhighlight">&nbsp;2020 | UNET&nbsp;</span>
+              <p>Diferentes paginas web usando la libreria de ReactJs</p>
+          </div>
+          <div class="card-panel hoverable">
+              <span class="mysubtitle">Desarrollador Web</span><br>
+              <span class="teal white-text myhighlight">&nbsp;2019&nbsp;</span>
+              <p>Páginas web usando librerias de Python y Javascript</p>
+          </div>
+        </div>
+        <div class="col s12 m6 l6">
+          <p class="mytitle">Habilidades con Idiomas</p>
+          <div class="card-panel hoverable">
+            <span class="mysubtitle2">Español</span>
+            <div class="progress">
+              <div class="determinate" style="width: 100%"></div>
+            </div>
+            <span class="mysubtitle2">Ingles</span>
+            <div class="progress">
+              <div class="determinate" style="width: 100%"></div>
+            </div>
+            <span class="mysubtitle2">Italiano</span>
+            <div class="progress">
+              <div class="determinate" style="width: 50%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l6">
+            <p class="mytitle">Habilidades de programación</p>
+          <div class="card-panel hoverable">
+              <span class="mysubtitle2">Django</span>
+            <div class="progress">
+              <div class="determinate" style="width: 75%"></div>
+            </div>
+            <span class="mysubtitle2">ReactJs</span>
+            <div class="progress">
+              <div class="determinate" style="width: 75%"></div>
+            </div>
+            <span class="mysubtitle2">Python</span>
+            <div class="progress">
+              <div class="determinate" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- carousel  -->
+  <div class="block grey lighten-4" id="trabajos">
+    <br><br>
+    <a href="/projects">
+      <p class="center titulos light">PORTFOLIO</p>
+      <h3 class="center titulos">MIS PROYECTOS</h3>
+    </a>
+    <div class="container section">
+      <div class="row">
+        <div class="col s12">
+          <div class="carousel">
+            {% for project in projects %}
+              <a class="carousel-item" href="projects/{{project.slug}}"><img src="{{project.miniature.url}}"></a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- contacto  -->
+  <div class="container section" id="contacto">
+    <div class="row">
+      <br>
+      <p class="center titulos light">SALÚDAME</p>
+      <h3 class="center titulos">CONTACTO</h3>
+      <br><br>
+      <div class="col s12 m4 l4">
+        <div class="card-panel hoverable center">
+          <i class="material-icons">location_on</i>
+          <p class="mycontact">Venezuela</p>
+          <span class="grey-text">Localización</span>
+        </div>
+      </div>
+      <div class="col s12 m4 l4">
+        <div class="card-panel hoverable center">
+          <i class="material-icons">local_phone</i>
+          <p class="mycontact">+58 555 555555</p>
+          <span class="grey-text">Teléfono</span>
+        </div>
+      </div>
+      <div class="col s12 m4 l4">
+        <div class="card-panel hoverable center">
+          <i class="material-icons">email</i>
+          <p class="mycontact">juliomproyecto@gmail.com</p>
+          <span class="grey-text">Email</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer  -->
+  <footer class="page-footer blue-grey lighten-3">
+    <div class="container black-text center">
+    Made by <strong>Julio Mendez</strong> | All Rights Reserved
+    </div>
+    <br>
+  </footer>
+
+  <!-- fixed-btn  -->
+  {% get_available_languages as LANGUAGES %}
+  {% get_language_info_list for LANGUAGES as languages %}
+
+  <div class="fixed-action-btn">
+    <form action="{% url 'set_language' %}" method="post" id="myform">
+      {% csrf_token %}
+      <input type="hidden" name="next" value="{{redirect_to}}" >
+        <a class="btn-floating btn-large teal ">
+        <i class="large material-icons">language</i>
+        </a>
+        <ul>
+          {% for language in languages %}
+          <li>
+            <button class="btn transparent" type="submit" value="{{language.code}}" name="language">
+              <img width="30" {% if language.code == "es" %} src="{% static '/images/icons/spain.png' %}" {% else %} src="{% static '/images/icons/england.png' %}" {% endif %}> 
+            </button>
+          </li>
+            {# <li><a href="" onclick="document.getElementById('myform').submit("{{language.code}}")"><i class="material-icons" >language</i></a></li> #}
+            {# <li><input type="submit" value="{{language.code}}" name="language"><i class="material-icons">language</i></li> #}
+          {% endfor %}
+        </ul>
+    </form>
+  </div>
+  <!--  Scripts-->
+  <script src="{% static '/js/init.js' %}"></script>
+</body>
+</html>
