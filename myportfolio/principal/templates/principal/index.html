@@ -289,17 +289,16 @@
   <div class="block grey lighten-4" id="trabajos">
     <br><br>
     <p class="center titulos light">PORTFOLIO</p>
-    <h3 class="center titulos">MIS TRABAJOS</h3>
+    <a href="/trabajos">
+      <h3 class="center titulos">MIS TRABAJOS</h3>
+    </a>
     <div class="container section">
       <div class="row">
         <div class="col s12">
           <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="{% static 'miniaturas/miniatura4.jpg' %}"></a>
-            <a class="carousel-item" href="#two!"><img src="{% static 'miniaturas/miniatura5.jpg' %}"></a>
-            <a class="carousel-item" href="#three!"><img src="{% static 'miniaturas/miniatura6.png' %}"></a>
-            <a class="carousel-item" href="#four!"><img src"{% static 'miniaturas/miniatura7.png' %}"></a>
-            <a class="carousel-item" href="#five!"><img src="{% static 'miniaturas/miniatura8.jpg' %}"></a>
-            <a class="carousel-item" href="#four!"><img src="{% static 'miniaturas/miniatura9.png' %}"></a>
+            {% for proyecto in proyectos %}
+              <a class="carousel-item" href="#one!"><img src="{{proyecto.imagen.url}}"></a>
+            {% endfor %}
           </div>
         </div>
       </div>
