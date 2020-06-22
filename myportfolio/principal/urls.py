@@ -7,6 +7,7 @@ from django.conf import settings
 urlpatterns = [
     path('', views.inicio, name="inicio"),
     path('trabajos/', views.trabajos, name="trabajos"),
+    path('trabajos/<slug:slug_text>', views.detalles),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -297,7 +297,7 @@
         <div class="col s12">
           <div class="carousel">
             {% for proyecto in proyectos %}
-              <a class="carousel-item" href="#one!"><img src="{{proyecto.imagen.url}}"></a>
+              <a class="carousel-item" href="/trabajos/{{proyecto.slug}}"><img src="{{proyecto.imagen.url}}"></a>
             {% endfor %}
           </div>
         </div>
