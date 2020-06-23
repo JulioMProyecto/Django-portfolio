@@ -1,4 +1,83 @@
-{% for proyecto in proyectos %}
-	{{proyecto.titulo}}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Julio Mendez</title>
+	<link rel="icon" href="{% static '/images/logo.png' %}" type="image/icon type">
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-{% endfor %}
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     
+	<link href="{% static '/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+	<!-- Barra de navegacion  -->
+	<div class="navbar-fixed">
+		<nav class="white" role="navigation">
+		  <div class="nav-wrapper">
+		    <div class="container">
+		      <a id="logo-container" href="/" class="brand-logo">
+		        <img width="55" src="{% static '/images/logo.png' %}">
+		      </a>
+		      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		      <ul class="right hide-on-med-and-down">
+						<li>
+							<a href="/">
+								<i class="material-icons right icono">home</i>
+							<span class="teal-text">Inicio</span>
+							</a>
+						</li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+
+	<ul id="mobile-demo" class="sidenav sidenav-close" style="width:200px">
+		<br>
+		<li>
+			<a href="/">
+			<i class="material-icons icono">home</i>Inicio
+			</a>
+		</li>
+	</ul>
+
+
+	<div class="container section">
+		<div class="row">
+			<br>
+			<p class="center titulos light">PORTFOLIO</p>
+      <h3 class="center titulos">MIS PROYECTOS</h3>
+      <br><br>
+			{% for proyecto in proyectos %}
+				<div class="col s12 m6 l6">
+					<div class="card hoverable">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="{{proyecto.imagen.url}}">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">{{proyecto.titulo}}<i class="material-icons right">more_vert</i></span>
+				      <p><a href="{{proyecto.slug}}">Ir a Proyecto</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">{{proyecto.titulo}}<i class="material-icons right">close</i></span>
+				      <p>{{proyecto.resumen}}</p>
+				      <p><a href="{{proyecto.slug}}">Ir a Proyecto</a></p>
+				    </div>
+				  </div>						
+				</div>
+			{% endfor %} 
+		</div>
+	</div>
+	
+  <!--  Scripts-->
+  <script src="{% static '/js/init.js' %}"></script>
+</body>
+</html>
