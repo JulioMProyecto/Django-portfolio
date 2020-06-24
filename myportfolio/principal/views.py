@@ -4,9 +4,21 @@ from .models import Proyecto
 
 
 def inicio(request):
-    proyectos = Proyecto.objects.all()
-    context = {"proyectos": proyectos}
-    return render(request, "principal/index.html", context)
+    # proyectos = Proyecto.objects.all()
+    # context = {"proyectos": proyectos}
+    # return render(request, "principal/index_es.html", context)
+
+    from django.utils import translation
+    language = request.session.get(translation.LANGUAGE_SESSION_KEY)
+
+    if language == "en":
+        proyectos = Proyecto.objects.all()
+        context = {"proyectos": proyectos}
+        return render(request, 'principal/indexEN.html', context)
+    else:
+        proyectos = Proyecto.objects.all()
+        context = {"proyectos": proyectos}
+        return render(request, 'principal/indexES.html', context)
 
 
 def trabajos(request):
